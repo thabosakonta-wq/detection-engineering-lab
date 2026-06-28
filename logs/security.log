@@ -1,0 +1,16 @@
+EventID: 4625
+User: admin
+SourceIP: 10.10.10.5
+
+EventID: 4625
+User: admin
+SourceIP: 10.10.10.5
+
+EventID: 4672
+User: admin
+
+EventID: 4720
+User: attacker
+
+Process: powershell.exe
+CommandLine: powershell -enc SQBFAFgA

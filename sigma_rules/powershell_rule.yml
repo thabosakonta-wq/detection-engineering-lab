@@ -1,0 +1,18 @@
+title: PowerShell Execution Detection
+id: ps-001
+status: experimental
+
+description: Detects PowerShell execution activity.
+
+logsource:
+  product: windows
+
+detection:
+  selection:
+    Process: powershell.exe
+  condition: selection
+
+level: high
+
+tags:
+  - attack.t1059.001
