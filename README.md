@@ -69,12 +69,17 @@ Detection-Engineering-Lab
 │   ├── detection_engineering_report.txt
 │   └── mitre_mapping.md
 ├── screenshots
+│   ├── brute_force_rule.png
+│   ├── privilege_escalation_rule.png
+│   ├── account_creation_rule.png
+│   └── powershell_rule.png
 ├── sigma_rules
 │   ├── account_creation_rule.yml
 │   ├── brute_force_rule.yml
 │   ├── powershell_rule.yml
 │   └── privilege_escalation_rule.yml
-└── README.md```
+└── README.md
+```
 
 ---
 
