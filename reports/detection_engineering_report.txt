@@ -1,36 +1,50 @@
-Detection Engineering Investigation Report
+DETECTION ENGINEERING INVESTIGATION REPORT
+
+Investigation ID:
+DE-2026-001
 
 Date:
-2026-06-27
+2026-06-30
 
 Summary:
+Multiple Sigma detection rules were developed and validated.
 
-Multiple suspicious activities were identified through Sigma detection rules.
+Rules Reviewed:
+- Brute Force Detection
+- Privilege Escalation Detection
+- Account Creation Detection
+- PowerShell Activity Detection
+
+Severity Assessment:
+
+Brute Force Detection
+Severity: High
+
+Privilege Escalation Detection
+Severity: High
+
+Account Creation Detection
+Severity: Medium
+
+PowerShell Activity Detection
+Severity: High
 
 Findings:
 
-1. Failed Login Attempts
-   - Event ID 4625
-   - Possible brute-force activity
+1. Multiple failed logon attempts may indicate password guessing.
 
-2. Privileged Account Activity
-   - Event ID 4672
-   - Elevated privileges observed
+2. Privileged account assignments may indicate escalation activity.
 
-3. Account Creation
-   - Event ID 4720
-   - New account created
+3. New account creation could indicate persistence.
 
-4. PowerShell Execution
-   - powershell.exe detected
-   - Requires further investigation
-
-Risk Level:
-High
+4. PowerShell execution may indicate attacker activity.
 
 Recommendations:
 
-- Investigate authentication events
-- Review account permissions
-- Validate account creation
-- Analyze PowerShell activity
+- Monitor authentication failures.
+- Review privileged account changes.
+- Audit account creation events.
+- Investigate suspicious PowerShell execution.
+
+Status:
+Detection Rules Validated
