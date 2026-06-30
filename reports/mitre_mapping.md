@@ -1,77 +1,56 @@
-MITRE ATT&CK Mapping - Detection Engineering Lab
+# MITRE ATT&CK Mapping
 
-Brute Force Detection
-
-Detection:
-Repeated failed login attempts.
-
-MITRE ATT&CK:
-
-- T1110 Brute Force
-
-Severity:
-High
+| Detection | Technique | Description |
+|------------|------------|------------|
+| Brute Force | T1110 | Brute Force |
+| Privilege Escalation | T1078 | Valid Accounts |
+| Account Creation | T1136 | Create Account |
+| PowerShell Activity | T1059.001 | PowerShell |
 
 ---
 
-Privilege Escalation Detection
+## Technique Analysis
 
-Detection:
-Privileged account activity detected.
+### T1110 – Brute Force
 
-MITRE ATT&CK:
+Detects repeated authentication failures.
 
-- T1078 Valid Accounts
+Severity: High
 
-Severity:
-High
+### T1078 – Valid Accounts
 
----
+Detects privileged account assignments.
 
-Account Creation Detection
+Severity: High
 
-Detection:
-New account creation observed.
+### T1136 – Create Account
 
-MITRE ATT&CK:
+Detects newly created accounts.
 
-- T1136 Create Account
+Severity: Medium
 
-Severity:
-Medium
+### T1059.001 – PowerShell
 
----
+Detects PowerShell execution activity.
 
-PowerShell Execution Detection
-
-Detection:
-PowerShell execution observed.
-
-MITRE ATT&CK:
-
-- T1059.001 PowerShell
-
-Severity:
-High
+Severity: High
 
 ---
 
-Investigation Summary
+## Coverage Summary
 
-Observed Behavior:
+ATT&CK Tactics Covered:
 
-- Failed login activity
-- Privileged account activity
-- Account creation activity
-- PowerShell execution
+- Credential Access
+- Execution
+- Persistence
+- Privilege Escalation
 
-Assessment:
+---
 
-Potential attacker activity requiring investigation.
+## Recommendations
 
-Recommended Actions:
-
-- Investigate authentication logs
-- Review account activity
-- Validate account creation
-- Analyze PowerShell commands
+- Monitor failed logons.
+- Audit privilege assignments.
+- Review account creation activity.
+- Investigate PowerShell execution.
