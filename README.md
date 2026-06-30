@@ -93,6 +93,17 @@ Detection-Engineering-Lab
 
 ![Privilege Escalation Rule](screenshots/privilege_escalation_rule.png)
 
+## Learning Outcomes
+
+- Detection Engineering
+- Sigma Rule Development
+- Threat Detection
+- MITRE ATT&CK Mapping
+- Security Monitoring
+- SOC Operations
+- Threat Hunting
+- Incident Investigation
+
 ## Author
 
 Thabo Sakonta
