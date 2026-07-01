@@ -93,9 +93,6 @@ Detection-Engineering-Lab
 
 ---
 
-## Screenshots
-
-
 ## Learning Outcomes
 
 - Detection Engineering
