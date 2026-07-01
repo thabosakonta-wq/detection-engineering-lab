@@ -1,8 +1,8 @@
-title: Privilege Escalation Detection
-id: pe-001
+title: Account Creation Detection
+id: ac-001
 status: experimental
 
-description: Detects privileged account activity.
+description: Detects creation of new user accounts.
 
 logsource:
   product: windows
@@ -10,10 +10,10 @@ logsource:
 
 detection:
   selection:
-    EventID: 4672
+    EventID: 4720
   condition: selection
 
-level: high
+level: medium
 
 tags:
-  - attack.t1078
+  - attack.t1136

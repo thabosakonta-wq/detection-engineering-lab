@@ -3,6 +3,9 @@ DETECTION ENGINEERING INVESTIGATION REPORT
 Investigation ID:
 DE-2026-001
 
+Incident ID:
+DE-LAB-2026-001
+
 Date:
 2026-06-30
 
@@ -29,7 +32,13 @@ Severity: Medium
 PowerShell Activity Detection
 Severity: High
 
-Findings:
+Executive Summary
+
+Multiple suspicious activities were detected through Sigma-based detections developed as part of this Detection Engineering Lab.
+
+The detections identified authentication anomalies, privileged account activity, account creation events, and PowerShell execution activity.
+
+Findings
 
 1. Multiple failed logon attempts may indicate password guessing.
 
@@ -39,7 +48,78 @@ Findings:
 
 4. PowerShell execution may indicate attacker activity.
 
-Recommendations:
+1. Failed Login Attempts
+Event ID: 4625
+
+Description:
+Repeated authentication failures identified.
+
+MITRE ATT&CK:
+T1110 – Brute Force
+
+Risk:
+High
+
+------------------------------------------------
+
+2. Privileged Account Activity
+Event ID: 4672
+
+Description:
+Elevated privileges assigned to an account.
+
+MITRE ATT&CK:
+T1078 – Valid Accounts
+
+Risk:
+High
+
+------------------------------------------------
+
+3. Account Creation Activity
+Event ID: 4720
+
+Description:
+New user account creation detected.
+
+MITRE ATT&CK:
+T1136 – Create Account
+
+Risk:
+Medium
+
+------------------------------------------------
+
+4. PowerShell Execution Activity
+
+Description:
+PowerShell execution detected.
+
+MITRE ATT&CK:
+T1059.001 – PowerShell
+
+Risk:
+High
+
+------------------------------------------------
+
+Overall Risk Assessment
+
+High
+
+The combination of authentication failures, privilege assignment activity, account creation, and PowerShell execution may indicate malicious activity requiring immediate investigation.
+
+Recommendations
+
+- Review failed authentication events
+- Validate privileged account assignments
+- Investigate newly created accounts
+- Analyze PowerShell commands
+- Correlate with endpoint logs and SIEM telemetry
+
+Conclusion
+
+Detection engineering controls successfully identified suspicious activity and demonstrated Sigma rule effectiveness for SOC monitoring and threat detection workflows.
 
 - Monitor authentication failures.
 - Review privileged account changes.
