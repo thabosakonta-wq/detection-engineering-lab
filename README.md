@@ -35,6 +35,16 @@ Detects newly created user accounts.
 
 Detects PowerShell execution activity.
 
+## Screenshots
+
+### Brute Force Detection Rule
+
+![Brute Force Rule](screenshots/brute_force_rule.png)
+
+### Privilege Escalation Detection Rule
+
+![Privilege Escalation Rule](screenshots/privilege_escalation_rule.png)
+
 ---
 
 ## MITRE ATT&CK Coverage
