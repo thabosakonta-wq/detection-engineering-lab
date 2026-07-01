@@ -1,12 +1,13 @@
 # MITRE ATT&CK Mapping
 
-| Detection | Technique | Description |
-|------------|------------|------------|
-| Brute Force | T1110 | Brute Force |
-| Privilege Escalation | T1078 | Valid Accounts |
-| Account Creation | T1136 | Create Account |
-| PowerShell Activity | T1059.001 | PowerShell |
+## Event Coverage
 
+| Event ID | MITRE Technique | Description |
+|----------|----------------|-------------|
+| 4625 | T1110 | Brute Force |
+| 4672 | T1078 | Valid Accounts |
+| 4720 | T1136 | Create Account |
+| 4688 | T1059.001 | PowerShell |
 MITRE ATT&CK Mapping
 
 Detection Coverage
