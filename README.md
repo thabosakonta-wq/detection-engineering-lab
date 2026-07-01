@@ -85,13 +85,11 @@ Detection-Engineering-Lab
 
 ## Screenshots
 
-### Brute Force Detection Rule
+![Failed Login Detection](screenshots/failed_login_analysis.png)
 
-![Brute Force Rule](screenshots/brute_force_rule.png)
+![Privileged Activity Detection](screenshots/privileged_activity_detection.png)
 
-### Privilege Escalation Detection Rule
-
-![Privilege Escalation Rule](screenshots/privilege_escalation_rule.png)
+![Account Creation Detection](screenshots/account_creation_detection.png)
 
 ## Learning Outcomes
 
