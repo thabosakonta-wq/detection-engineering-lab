@@ -1,60 +1,126 @@
 # Detection Engineering Lab
 
-A cybersecurity project focused on detection engineering, Sigma rule development, threat detection, and MITRE ATT&CK mapping.
+A cybersecurity project demonstrating Sigma rule development, detection engineering, threat detection, and MITRE ATT&CK mapping.
 
 ---
 
 ## Overview
 
-This lab demonstrates how detection engineers create and document Sigma rules used to identify suspicious security events in enterprise environments.
+This project demonstrates how Security Detection Engineers create Sigma rules for identifying suspicious Windows security events.
 
-The project includes detections for:
+The lab contains detections for:
 
-- Brute Force Attacks
+- Failed Login Attempts
 - Privilege Escalation
 - Account Creation
-- PowerShell Activity
+- PowerShell Execution
 
 ---
 
-## Features
+# MITRE ATT&CK Mapping
+
+| Event ID | Technique | Description |
+|----------|-----------|-------------|
+| 4625 | T1110 | Brute Force |
+| 4672 | T1078 | Valid Accounts |
+| 4720 | T1136 | Create Account |
+| 4688 | T1059.001 | PowerShell |
+
+---
+
+## Detection Coverage
 
 ### Brute Force Detection
 
-Detects multiple failed login attempts.
+Event ID: 4625
 
-### Privilege Escalation Detection
+Technique
 
-Detects privileged account assignments.
+T1110 – Brute Force
 
-### Account Creation Detection
+Severity
 
-Detects newly created user accounts.
-
-### PowerShell Detection
-
-Detects PowerShell execution activity.
-
-## Screenshots
-
-### Brute Force Detection Rule
-
-![Brute Force Rule](screenshots/brute_force_rule.png)
-
-### Privilege Escalation Detection Rule
-
-![Privilege Escalation Rule](screenshots/privilege_escalation_rule.png)
+High
 
 ---
 
-## MITRE ATT&CK Coverage
+### Privilege Escalation
 
-| Technique | Description |
-|------------|------------|
-| T1110 | Brute Force |
-| T1078 | Valid Accounts |
-| T1136 | Create Account |
-| T1059.001 | PowerShell |
+Event ID: 4672
+
+Technique
+
+T1078 – Valid Accounts
+
+Severity
+
+High
+
+---
+
+### Account Creation
+
+Event ID: 4720
+
+Technique
+
+T1136 – Create Account
+
+Severity
+
+Medium
+
+---
+
+### PowerShell Execution
+
+Event ID: 4688
+
+Technique
+
+T1059.001 – PowerShell
+
+Severity
+
+High
+
+---
+
+## ATT&CK Tactics Covered
+
+- Credential Access
+- Privilege Escalation
+- Persistence
+- Execution
+
+---
+
+## Recommendations
+
+- Monitor failed logons
+- Audit privileged accounts
+- Review account creation
+- Investigate PowerShell execution
+
+---
+
+## Screenshots
+
+### Brute Force Rule
+
+![Brute Force Rule](screenshots/brute_force_rule.png)
+
+### Privilege Escalation Rule
+
+![Privilege Escalation Rule](screenshots/privilege_escalation_rule.png)
+
+### Account Creation Rule
+
+![Account Creation Rule](screenshots/account_creation_rule.png)
+
+### PowerShell Rule
+
+![PowerShell Rule](screenshots/powershell_rule.png)
 
 ---
 
@@ -63,13 +129,14 @@ Detects PowerShell execution activity.
 - Sigma
 - MITRE ATT&CK
 - Linux
-- Termux
+- Bash
 - Git
 - GitHub
+- Termux
 
 ---
 
-## Project Structure
+## Reports
 
 ```text
 Detection-Engineering-Lab
@@ -121,3 +188,5 @@ https://www.linkedin.com/in/thabo-sakonta-377a3748
 ## License
 
 This project is provided for educational and portfolio purposes.
+=======
+Detection Investigation
