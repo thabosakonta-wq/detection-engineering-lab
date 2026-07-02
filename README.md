@@ -188,5 +188,3 @@ https://www.linkedin.com/in/thabo-sakonta-377a3748
 ## License
 
 This project is provided for educational and portfolio purposes.
-=======
-Detection Investigation
