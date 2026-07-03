@@ -119,12 +119,9 @@ Recommendations
 
 Conclusion
 
-Detection engineering controls successfully identified suspicious activity and demonstrated Sigma rule effectiveness for SOC monitoring and threat detection workflows.
+The Sigma rules developed during this project successfully detect multiple Windows attack techniques aligned to the MITRE ATT&CK framework.
 
-- Monitor authentication failures.
-- Review privileged account changes.
-- Audit account creation events.
-- Investigate suspicious PowerShell execution.
+The completed detections demonstrate practical detection engineering skills, support SOC investigations, and provide reusable detection logic suitable for SIEM deployment and continuous security monitoring.
 
 Status:
 Detection Rules Validated
