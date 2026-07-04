@@ -35,6 +35,36 @@ The lab simulates a Detection Engineering workflow by identifying common attack 
 - Automated Hunt Scheduling
 ---
 
+## Features
+
+### Failed Login Detection
+
+- Detects Windows Event ID 4625
+- Identifies brute-force authentication attempts
+
+### Privilege Escalation Detection
+
+- Detects Windows Event ID 4672
+- Identifies privileged account activity
+
+### Account Creation Detection
+
+- Detects Windows Event ID 4720
+- Identifies newly created user accounts
+
+### PowerShell Detection
+
+- Detects Windows Event ID 4688
+- Identifies PowerShell execution
+
+### Sigma Rule Development
+
+- Creates Sigma detection rules
+- Maps detections to MITRE ATT&CK
+- Produces professional detection documentation
+
+---
+
 # MITRE ATT&CK Coverage
 
 | Event ID | Technique | Description |
