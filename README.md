@@ -57,6 +57,14 @@ The lab simulates a Detection Engineering workflow by identifying common attack 
 
 ---
 
+# Reports
+
+- reports/executive_summary.md
+- reports/detection_engineering_report.txt
+- reports/mitre_mapping.md
+
+---
+
 # Technologies Used
 
 - Sigma
@@ -95,14 +103,6 @@ Detection-Engineering-Lab
 
 ---
 
-# Reports
-
-- reports/executive_summary.md
-- reports/detection_engineering_report.txt
-- reports/mitre_mapping.md
-
----
-
 # Screenshots
 
 ## Brute Force Rule
@@ -132,18 +132,6 @@ Detection-Engineering-Lab
 - MITRE ATT&CK Mapping
 - Incident Investigation
 - SOC Operations
-
----
-
-# Future Enhancements
-
-- Sigma Rule Testing
-- Elastic SIEM Integration
-- Splunk Integration
-- Microsoft Sentinel Analytics Rules
-- Microsoft Defender XDR
-- Automated Detection Validation
-- Sysmon Detection Rules
 
 ---
 
