@@ -23,32 +23,16 @@ The lab simulates a Detection Engineering workflow by identifying common attack 
 
 ---
 
-# Features
+## Future Enhancements
 
-## Failed Login Detection
-
-- Detects Windows Event ID 4625
-- Detects brute-force activity
-- Sigma rule included
-
-## Privileged Activity Detection
-
-- Detects Windows Event ID 4672
-- Identifies privileged account usage
-- Detects possible privilege escalation
-
-## Account Creation Detection
-
-- Detects Windows Event ID 4720
-- Detects unauthorized account creation
-- Supports persistence detection
-
-## PowerShell Detection
-
-- Detects Windows Event ID 4688
-- Detects PowerShell execution
-- Supports execution technique detection
-
+- Sigma Rule Integration
+- Microsoft Sentinel Integration
+- Splunk SIEM Integration
+- Elastic SIEM Integration
+- Microsoft Defender XDR Integration
+- IOC Automation
+- Threat Intelligence Feed Integration
+- Automated Hunt Scheduling
 ---
 
 # MITRE ATT&CK Coverage
