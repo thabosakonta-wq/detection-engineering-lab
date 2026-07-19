@@ -1,5 +1,5 @@
 title: PowerShell Execution Detection
-id: ps-001
+id: 0393073a-3011-4622-a1de-e32d6569228b
 status: experimental
 
 description: Detects PowerShell execution activity.

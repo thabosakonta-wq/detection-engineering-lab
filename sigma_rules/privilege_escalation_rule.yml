@@ -1,5 +1,5 @@
 title: Privilege Escalation Detection
-id: pe-001
+id: 8afad09f-3888-4f0b-8c0f-6e951b8a01fe
 status: experimental
 
 description: Detects privileged account activity.

@@ -1,5 +1,5 @@
 title: Account Creation Detection
-id: ac-001
+id: 8d5f4b2a-8c8c-4e8d-9b7e-5f7a2d1c3a90
 status: experimental
 
 description: Detects creation of new user accounts.
