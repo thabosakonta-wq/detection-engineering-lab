@@ -17,3 +17,18 @@ level: high
 
 tags:
   - attack.t1068
+
+author: Thabo Sakonta
+
+date: 2026/07/20
+
+references:
+  - https://attack.mitre.org/techniques/T1068/
+
+falsepositives:
+  - Approved administrative activity
+
+fields:
+  - User
+  - ProcessName
+  - ParentProcessName

@@ -16,5 +16,19 @@ detection:
 level: medium
 
 tags:
-  - attack.persistence
   - attack.t1136
+
+author: Thabo Sakonta
+
+date: 2026/07/20
+
+references:
+  - https://attack.mitre.org/techniques/T1136/
+
+falsepositives:
+  - Legitimate administrator account creation
+
+fields:
+  - TargetUserName
+  - SubjectUserName
+  - Computer

@@ -1,8 +1,17 @@
 title: PowerShell Execution Detection
+
 id: 0393073a-3011-4622-a1de-e32d6569228b
+
 status: experimental
 
-description: Detects PowerShell execution activity.
+description: Detects PowerShell execution activity that may indicate scripting, administration, or malicious execution.
+
+author: Thabo Sakonta
+
+date: 2026/07/20
+
+references:
+  - https://attack.mitre.org/techniques/T1059/001/
 
 logsource:
   product: windows
@@ -12,8 +21,16 @@ detection:
     Process: powershell.exe
   condition: selection
 
+falsepositives:
+  - Legitimate administrator PowerShell usage
+  - IT automation scripts
+
+fields:
+  - CommandLine
+  - User
+  - ParentImage
+
 level: high
 
 tags:
-  - attack.execution
   - attack.t1059.001
