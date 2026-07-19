@@ -16,4 +16,5 @@ detection:
 level: medium
 
 tags:
+  - attack.persistence
   - attack.t1136

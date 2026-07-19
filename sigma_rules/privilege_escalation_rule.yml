@@ -16,4 +16,4 @@ detection:
 level: high
 
 tags:
-  - attack.t1078
+  - attack.t1068

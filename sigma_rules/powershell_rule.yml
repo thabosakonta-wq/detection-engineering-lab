@@ -15,4 +15,5 @@ detection:
 level: high
 
 tags:
+  - attack.execution
   - attack.t1059.001
