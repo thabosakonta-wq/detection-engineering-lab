@@ -1,0 +1,8 @@
+{
+  "EventID": 4625,
+  "Computer": "WIN-DC01",
+  "TargetUserName": "administrator",
+  "IpAddress": "192.168.1.50",
+  "Status": "0xC000006A",
+  "Message": "An account failed to log on"
+}

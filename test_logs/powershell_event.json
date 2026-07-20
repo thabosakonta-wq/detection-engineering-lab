@@ -1,0 +1,7 @@
+{
+  "EventID": 4104,
+  "Computer": "WIN-CLIENT01",
+  "User": "thabo",
+  "Process": "powershell.exe",
+  "CommandLine": "powershell.exe -ExecutionPolicy Bypass"
+}
