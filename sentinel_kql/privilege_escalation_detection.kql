@@ -1,0 +1,6 @@
+SecurityEvent
+| where EventID == 4672
+| project TimeGenerated,
+          SubjectUserName,
+          Computer,
+          PrivilegeList

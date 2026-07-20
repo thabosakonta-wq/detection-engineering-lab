@@ -1,0 +1,6 @@
+DeviceProcessEvents
+| where ProcessCommandLine contains "powershell.exe"
+| project Timestamp,
+          DeviceName,
+          AccountName,
+          ProcessCommandLine
