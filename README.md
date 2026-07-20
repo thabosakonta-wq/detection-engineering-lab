@@ -111,23 +111,32 @@ The lab simulates a Detection Engineering workflow by identifying common attack 
 # Project Structure
 
 ```text
-Detection-Engineering-Lab
-├── logs
-│   └── security.log
-├── reports
-│   ├── executive_summary.md
-│   ├── detection_engineering_report.txt
-│   └── mitre_mapping.md
-├── screenshots
-│   ├── brute_force_rule.png
-│   ├── privilege_escalation_rule.png
-│   ├── account_creation_rule.png
-│   └── powershell_rule.png
+detection-engineering-lab
 ├── sigma_rules
+│   ├── powershell_rule.yml
 │   ├── brute_force_rule.yml
-│   ├── privilege_escalation_rule.yml
 │   ├── account_creation_rule.yml
-│   └── powershell_rule.yml
+│   └── privilege_escalation_rule.yml
+│
+├── kql_queries
+│   ├── powershell_detection.kql
+│   ├── brute_force_detection.kql
+│   ├── account_creation_detection.kql
+│   └── privilege_escalation_detection.kql
+│
+├── sentinel_kql
+│   ├── powershell_detection.kql
+│   ├── brute_force_detection.kql
+│   ├── account_creation_detection.kql
+│   └── privilege_escalation_detection.kql
+│
+├── test_logs
+│   ├── brute_force_event.json
+│   ├── powershell_event.json
+│   └── README.md
+│
+├── scripts
+│
 └── README.md
 ```
 
